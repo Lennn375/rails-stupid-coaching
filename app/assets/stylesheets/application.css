@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+.container {
+  margin: 30px;
+  padding: 40px;
+  text-align: center;
+  background-color: rgb(201, 228, 201);
+  width: 500px;
+  height: 500px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#link-home {
+  text-decoration: none;
+  font-family: 'Varela', sans-serif;
+}

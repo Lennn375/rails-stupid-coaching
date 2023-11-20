@@ -1,0 +1,19 @@
+<div class="container">
+  <p>
+    <%= params["question"]%>
+    <em>-You</em>
+  </p>
+  <p>
+    <% q = params["question"]%>
+    <% if q.include?("?")%>
+      <%= "Silly question, get dressed and go to work!" %>
+    <% elsif q == "I am going to work"%>
+      <%= "Great!" %>
+    <% else %>
+      <%= "I don't care, get dressed and go to work" %>
+    <% end %>
+    <em>-Your Coach</em>
+  </p>
+
+  <p id="link-home"> <%= link_to "Ask another question", ask_path %></p>
+</div>
